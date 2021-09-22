@@ -4,4 +4,3 @@ os_version:
 provider:
   linux_aarch64: default
   linux_ppc64le: default
-build_with_mambabuild: True
