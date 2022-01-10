@@ -11,6 +11,9 @@ package:
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 174091ce5f2c02123f76d546622b14078097af105870086d18d55c1c2667d855
+  patches:
+    # remove for systemd >= 250
+    - 0001-meson.build-change-operator-combining-bools-from-to-.patch
 
 build:
   number: {{ build }}
