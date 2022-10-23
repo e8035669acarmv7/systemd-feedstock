@@ -16,12 +16,9 @@ openssl:
 - '3'
 p11_kit:
 - '0.24'
-pin_run_as_build:
-  xz:
-    max_pin: x.x
 target_platform:
 - linux-64
 xz:
-- '5.2'
+- '5'
 zstd:
 - '1.5'

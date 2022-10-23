@@ -1,6 +1,6 @@
 {% set name = "systemd" %}
-{% set version = "249" %}
-{% set build = 4 %}
+{% set version = "251" %}
+{% set build = 0 %}
 {% set libudev_abi_version = "1" %}
 {% set libsystemd_abi_version = "0" %}
 
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 174091ce5f2c02123f76d546622b14078097af105870086d18d55c1c2667d855
+  sha256: 0ecc8bb28d3062c8e58a64699a9b16534554bb6a01efb8d5507c893db39f8d51
   patches:
-    # remove for systemd >= 250
-    - 0001-meson.build-change-operator-combining-bools-from-to-.patch
+    # Fixed in 252
+    - 24606-missing-loop-flags.patch
 
 build:
   number: {{ build }}
