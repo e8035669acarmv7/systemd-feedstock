@@ -11,6 +11,9 @@ package:
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 0ecc8bb28d3062c8e58a64699a9b16534554bb6a01efb8d5507c893db39f8d51
+  patches:
+    # Fixed in 252
+    - 24606-missing-loop-flags.patch
 
 build:
   number: {{ build }}
