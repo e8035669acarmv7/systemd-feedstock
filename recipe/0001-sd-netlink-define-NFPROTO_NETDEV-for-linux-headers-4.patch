@@ -1,0 +1,39 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Wed, 2 Nov 2022 15:01:45 -0400
+Subject: [PATCH] sd-netlink: define NFPROTO_NETDEV for linux headers < 4.2
+
+---
+ src/basic/missing_netfilter.h                    | 7 +++++++
+ src/libsystemd/sd-netlink/netlink-message-nfnl.c | 1 +
+ 2 files changed, 8 insertions(+)
+ create mode 100644 src/basic/missing_netfilter.h
+
+diff --git a/src/basic/missing_netfilter.h b/src/basic/missing_netfilter.h
+new file mode 100644
+index 0000000000..0fc4ee05c5
+--- /dev/null
++++ b/src/basic/missing_netfilter.h
+@@ -0,0 +1,7 @@
++/* SPDX-License-Identifier: LGPL-2.1-or-later */
++#pragma once
++
++/* linux@e687ad60af09010936bbd0b2a3b5d90a8ee8353c (4.2) */
++#ifndef NFPROTO_NETDEV
++#  define NFPROTO_NETDEV 5
++#endif
+diff --git a/src/libsystemd/sd-netlink/netlink-message-nfnl.c b/src/libsystemd/sd-netlink/netlink-message-nfnl.c
+index 582f623efe..c5ef555270 100644
+--- a/src/libsystemd/sd-netlink/netlink-message-nfnl.c
++++ b/src/libsystemd/sd-netlink/netlink-message-nfnl.c
+@@ -8,6 +8,7 @@
+ #include "sd-netlink.h"
+ 
+ #include "io-util.h"
++#include "missing_netfilter.h"
+ #include "netlink-internal.h"
+ #include "netlink-types.h"
+ #include "netlink-util.h"
+-- 
+2.37.3
+

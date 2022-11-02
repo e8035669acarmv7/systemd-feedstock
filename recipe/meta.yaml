@@ -11,6 +11,8 @@ package:
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 113a9342ddf89618a17c4056c2dd72c4b20b28af8da135786d7e9b4f1d18acfb
+  patches:
+    - 0001-sd-netlink-define-NFPROTO_NETDEV-for-linux-headers-4.patch
 
 build:
   number: {{ build }}
