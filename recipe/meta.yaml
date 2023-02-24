@@ -13,6 +13,7 @@ source:
   sha256: acbd86d42ebc2b443722cb469ad215a140f504689c7a9133ecf91b235275a491
   patches:
     - 0001-sd-netlink-define-NFPROTO_NETDEV-for-linux-headers-4.patch
+    - 0002-loop-util-define-LOOP_SET_BLOCK_SIZE-for-linux-heade.patch
 
 build:
   number: {{ build }}
