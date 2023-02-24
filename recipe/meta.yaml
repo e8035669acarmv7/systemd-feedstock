@@ -1,5 +1,5 @@
 {% set name = "systemd" %}
-{% set version = "252" %}
+{% set version = "253" %}
 {% set build = 0 %}
 {% set libudev_abi_version = "1" %}
 {% set libsystemd_abi_version = "0" %}
@@ -10,9 +10,10 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 113a9342ddf89618a17c4056c2dd72c4b20b28af8da135786d7e9b4f1d18acfb
+  sha256: acbd86d42ebc2b443722cb469ad215a140f504689c7a9133ecf91b235275a491
   patches:
     - 0001-sd-netlink-define-NFPROTO_NETDEV-for-linux-headers-4.patch
+    - 0002-loop-util-define-LOOP_SET_BLOCK_SIZE-for-linux-heade.patch
 
 build:
   number: {{ build }}
