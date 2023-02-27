@@ -1,13 +1,75 @@
+About systemd-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/systemd-feedstock/blob/main/LICENSE.txt)
+
 About systemd
-=============
+-------------
+
+Home: https://www.freedesktop.org/wiki/Software/systemd/
+
+Package license: LGPL-2.1-or-later AND GPL-2.0-or-later
+
+Summary: System and Service Manager
+
+Development: https://github.com/systemd/systemd
+
+systemd is a suite of basic building blocks for a Linux system. It provides
+a system and service manager that runs as PID 1 and starts the rest of the
+system.
+
+systemd provides aggressive parallelization capabilities, uses socket and
+D-Bus activation for starting services, offers on-demand starting of
+daemons, keeps track of processes using Linux control groups, maintains
+mount and automount points, and implements an elaborate transactional
+dependency-based service control logic. systemd supports SysV and LSB init
+scripts and works as a replacement for sysvinit.
+
+Other parts include a logging daemon, utilities to control basic system
+configuration like the hostname, date, locale, maintain a list of logged-in
+users and running containers and virtual machines, system accounts, runtime
+directories and settings, and daemons to manage simple network
+configuration, network time synchronization, log forwarding, and name
+resolution.
+
+About libsystemd0
+-----------------
 
 Home: https://www.freedesktop.org/wiki/Software/systemd/
 
 Package license: LGPL-2.1-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/systemd-feedstock/blob/main/LICENSE.txt)
-
 Summary: Library for interfacing with systemd
+
+Development: https://github.com/systemd/systemd
+About libudev1
+--------------
+
+Home: https://www.freedesktop.org/wiki/Software/systemd/
+
+Package license: LGPL-2.1-or-later
+
+Summary: Library to access udev device information
+
+Development: https://github.com/systemd/systemd
+About libsystemd
+----------------
+
+Home: https://www.freedesktop.org/wiki/Software/systemd/
+
+Package license: LGPL-2.1-or-later
+
+Summary: Development package for the systemd library
+
+Development: https://github.com/systemd/systemd
+About libudev
+-------------
+
+Home: https://www.freedesktop.org/wiki/Software/systemd/
+
+Package license: LGPL-2.1-or-later
+
+Summary: Development package for the udev library
 
 Development: https://github.com/systemd/systemd
 
