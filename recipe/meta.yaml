@@ -52,6 +52,8 @@ outputs:
       build:
         - {{ compiler('c') }}
         - sysroot_linux-64 2.17  # [linux64]
+      host:
+        - libcap
     test:
       commands:
         # verify that library and its symlink gets installed
