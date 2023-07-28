@@ -3,6 +3,7 @@ About systemd-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/systemd-feedstock/blob/main/LICENSE.txt)
 
+
 About systemd
 -------------
 
@@ -32,6 +33,7 @@ directories and settings, and daemons to manage simple network
 configuration, network time synchronization, log forwarding, and name
 resolution.
 
+
 About libsystemd0
 -----------------
 
@@ -42,6 +44,7 @@ Package license: LGPL-2.1-or-later
 Summary: Library for interfacing with systemd
 
 Development: https://github.com/systemd/systemd
+
 About libudev1
 --------------
 
@@ -52,6 +55,7 @@ Package license: LGPL-2.1-or-later
 Summary: Library to access udev device information
 
 Development: https://github.com/systemd/systemd
+
 About libsystemd
 ----------------
 
@@ -62,6 +66,7 @@ Package license: LGPL-2.1-or-later
 Summary: Development package for the systemd library
 
 Development: https://github.com/systemd/systemd
+
 About libudev
 -------------
 
