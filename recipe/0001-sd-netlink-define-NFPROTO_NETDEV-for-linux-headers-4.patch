@@ -23,17 +23,17 @@ index 0000000000..0fc4ee05c5
 +#  define NFPROTO_NETDEV 5
 +#endif
 diff --git a/src/libsystemd/sd-netlink/netlink-message-nfnl.c b/src/libsystemd/sd-netlink/netlink-message-nfnl.c
-index 582f623efe..c5ef555270 100644
+index fd3055d879..9495a5903c 100644
 --- a/src/libsystemd/sd-netlink/netlink-message-nfnl.c
 +++ b/src/libsystemd/sd-netlink/netlink-message-nfnl.c
 @@ -8,6 +8,7 @@
  #include "sd-netlink.h"
  
- #include "io-util.h"
+ #include "iovec-util.h"
 +#include "missing_netfilter.h"
  #include "netlink-internal.h"
  #include "netlink-types.h"
  #include "netlink-util.h"
 -- 
-2.39.2
+2.34.1
 
