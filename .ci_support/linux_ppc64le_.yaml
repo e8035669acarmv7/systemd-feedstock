@@ -11,7 +11,7 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-ppc64le
 elfutils:
-- '0.189'
+- '0.191'
 lz4_c:
 - 1.9.3
 openssl:
